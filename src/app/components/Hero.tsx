@@ -4,10 +4,10 @@ export default function Hero() {
   return (
     <section className="px-6 pt-24 pb-32 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
       <div className="space-y-8">
-        <h1 className="text-5xl md:text-6xl leading-tight">
-          <span className="font-normal">Dress better.</span>
+        <h1 className="text-5xl md:text-6xl">
+          <span className="font-serif italic">Dress better.</span>
           <br />
-          <span className="text-[#8E8E8E] font-serif italic">
+          <span className="text-4xl md:text-5xl text-[#8E8E8E] font-normal">
             With certainty.
           </span>
         </h1>
