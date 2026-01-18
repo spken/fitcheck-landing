@@ -23,6 +23,7 @@ export default function Hero() {
             alt="Download on the App Store"
             width={150}
             height={50}
+            className="hover:scale-102 transition-transform"
           />
         </a>
       </div>
