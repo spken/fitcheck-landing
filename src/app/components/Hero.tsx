@@ -12,7 +12,7 @@ export default function Hero() {
           </span>
         </h1>
 
-        <p className="text-lg text-[#8E8E8E] max-w-md">
+        <p className="text-lg text-[#8E8E8E] max-w-md text-center md:text-left">
           Ever change outfits three times — not because they were bad, but
           because you weren't sure?
         </p>
