@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="px-6 pt-24 pb-32 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
       <div className="space-y-8 flex flex-col items-center md:items-start">
-        <h1 className="text-5xl md:text-6xl">
+        <h1 className="text-5xl md:text-6xl text-center md:text-left">
           <span className="font-serif italic">Dress better.</span>
           <br />
           <span className="text-4xl md:text-5xl text-[#8E8E8E] font-normal">
