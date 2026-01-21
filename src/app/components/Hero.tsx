@@ -31,7 +31,7 @@ export default function Hero() {
       <div className="relative w-full max-w-sm mx-auto">
         <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#2C2C2C] to-transparent blur-2xl opacity-40" />
         <Image
-          src="/iphone-mockup.png"
+          src="/iphone-mockup.svg"
           alt="FITCHECK app preview"
           width={360}
           height={720}
