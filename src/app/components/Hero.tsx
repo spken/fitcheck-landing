@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="px-6 pt-24 pb-32 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-      <div className="space-y-8">
+      <div className="space-y-8 flex flex-col items-center md:items-start">
         <h1 className="text-5xl md:text-6xl">
           <span className="font-serif italic">Dress better.</span>
           <br />
@@ -17,7 +17,7 @@ export default function Hero() {
           because you weren't sure?
         </p>
 
-        <a href="#" className="relative inline-block glow">
+        <a href="#" className="relative block w-fit mx-auto md:mx-0 glow">
           <Image
             src="/download.svg"
             alt="Download on the App Store"
@@ -29,7 +29,7 @@ export default function Hero() {
       </div>
 
       <div className="relative w-full max-w-sm mx-auto">
-        <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#2C2C2C] to-transparent blur-2xl opacity-40" />
+        <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#4A4A4A] to-transparent blur-2xl" />
         <Image
           src="/iphone-mockup.svg"
           alt="FITCHECK app preview"
