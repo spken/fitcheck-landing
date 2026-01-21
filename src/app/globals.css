@@ -23,6 +23,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+::selection {
+  background: #fafafa6a;
+  color: #0a0a0a;
+}
+
 .glow {
   position: relative;
   display: inline-block;
