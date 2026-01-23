@@ -36,7 +36,6 @@ export default function PrivacyPolicy() {
             <ul className="list-disc list-inside space-y-2 ml-4">
               <li><strong>Apple User ID:</strong> A unique identifier from Apple</li>
               <li><strong>Email address:</strong> If you choose to share it with us (or a private relay email from Apple)</li>
-              <li><strong>Name:</strong> If you choose to share it with us</li>
               <li><strong>Account creation date:</strong> When you first signed up</li>
             </ul>
             <p>
