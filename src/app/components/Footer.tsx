@@ -1,7 +1,18 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
-    <footer className="px-6 py-12 text-center text-xs text-[#8E8E8E]">
-      © {new Date().getFullYear()} FITCHECK
+    <footer className="px-6 py-12 text-center text-xs text-[#8E8E8E] space-y-2">
+      <p>© {new Date().getFullYear()} FITCHECK</p>
+      <p className="space-x-2">
+        <Link href="/terms" className="hover:text-[#FAFAFA] transition-colors">
+          Terms of Service
+        </Link>
+        <span>|</span>
+        <Link href="/privacy" className="hover:text-[#FAFAFA] transition-colors">
+          Privacy Policy
+        </Link>
+      </p>
     </footer>
   );
 }
