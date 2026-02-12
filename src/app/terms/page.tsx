@@ -13,7 +13,7 @@ export default function TermsOfService() {
       <article className="px-6 py-12 max-w-4xl mx-auto space-y-8">
         <div className="space-y-4">
           <h1 className="text-4xl md:text-5xl font-serif italic">Terms of Service</h1>
-          <p className="text-[#8E8E8E]">Last Updated: January 23, 2026</p>
+          <p className="text-[#8E8E8E]">Last Updated: February 12, 2026</p>
         </div>
 
         <div className="space-y-8 text-[#FAFAFA]/90 leading-relaxed">
@@ -34,7 +34,8 @@ export default function TermsOfService() {
             </p>
             <ul className="list-disc list-inside space-y-2 ml-4">
               <li>Outfit photograph analysis using artificial intelligence</li>
-              <li>Style scoring across six categories: proportions, colors, pieces, composition, person-fit, and details</li>
+              <li>Style scoring across three categories: fit, color, and style, plus an overall score</li>
+              <li>Detection of outfit style category (e.g., Streetwear, Casual, Minimalist, Business Casual, Old Money, Sporty)</li>
               <li>Personalized fashion tips and recommendations</li>
             </ul>
             <p>
@@ -66,20 +67,20 @@ export default function TermsOfService() {
             <p>
               Paid subscribers gain access to unlimited outfit scans and enhanced features. Subscription pricing is displayed in the App and billed through Apple&apos;s in-app purchase system.
             </p>
-            <h3 className="text-xl text-[#FAFAFA]">4.3 Billing and Renewal</h3>
+            <h3 className="text-xl text-[#FAFAFA]">4.2 Billing and Renewal</h3>
             <ul className="list-disc list-inside space-y-2 ml-4">
               <li>Subscriptions automatically renew unless canceled at least 24 hours before the end of the current period</li>
               <li>Your Apple account will be charged for renewal within 24 hours prior to the end of the current period</li>
               <li>You can manage subscriptions and turn off auto-renewal in your Apple account settings</li>
               <li>All payments are processed by Apple Inc. and subject to Apple&apos;s terms and conditions</li>
             </ul>
-            <h3 className="text-xl text-[#FAFAFA]">4.4 Refunds</h3>
+            <h3 className="text-xl text-[#FAFAFA]">4.3 Refunds</h3>
             <p>
               Refund requests are handled by Apple according to their refund policies. We do not have access to or control over Apple&apos;s billing system.
             </p>
-            <h3 className="text-xl text-[#FAFAFA]">4.5 Fair Use Policy</h3>
+            <h3 className="text-xl text-[#FAFAFA]">4.4 Fair Use Policy</h3>
             <p>
-              While paid subscriptions offer unlimited scans, we reserve the right to temporarily suspend accounts showing suspicious activity or abuse patterns (e.g., excessive scanning beyond reasonable personal use). We implement a soft limit of 20 scans per week for abuse detection. Normal users will never encounter this limit.
+              While paid subscriptions offer unlimited scans, we reserve the right to temporarily suspend accounts showing suspicious activity or abuse patterns (e.g., automated or bot-driven scanning beyond reasonable personal use).
             </p>
           </section>
 
@@ -92,10 +93,10 @@ export default function TermsOfService() {
             <ul className="list-disc list-inside space-y-2 ml-4">
               <li>A non-exclusive, worldwide license to process and analyze your photos for the purpose of providing the service</li>
               <li>The right to use AI models to analyze your outfit photographs</li>
-              <li>The right to store analysis results in our secure database (not including your photos)</li>
+              <li>The right to store analysis results in our secure database</li>
             </ul>
             <p>
-              We do not use your photographs for any purpose other than providing you with outfit analysis and recommendations.
+              Your photographs are sent to our AI provider for analysis and stored locally on your device. We do not permanently store your photographs on our servers.
             </p>
             <h3 className="text-xl text-[#FAFAFA]">5.2 Content Restrictions</h3>
             <p>
@@ -223,6 +224,7 @@ export default function TermsOfService() {
               <li><strong>Apple In-App Purchases:</strong> For subscription management (subject to Apple&apos;s terms)</li>
               <li><strong>Supabase:</strong> For data storage and backend services</li>
               <li><strong>OpenAI:</strong> For AI-powered outfit analysis</li>
+              <li><strong>Superwall:</strong> For subscription and paywall management</li>
             </ul>
             <p>
               Your use of these third-party services is subject to their respective terms and conditions. We are not responsible for the practices or policies of third-party services.

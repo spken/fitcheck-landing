@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
       <article className="px-6 py-12 max-w-4xl mx-auto space-y-8">
         <div className="space-y-4">
           <h1 className="text-4xl md:text-5xl font-serif italic">Privacy Policy</h1>
-          <p className="text-[#8E8E8E]">Last Updated: January 23, 2026</p>
+          <p className="text-[#8E8E8E]">Last Updated: February 12, 2026</p>
         </div>
 
         <div className="space-y-8 text-[#FAFAFA]/90 leading-relaxed">
@@ -51,7 +51,7 @@ export default function PrivacyPolicy() {
               <li><strong>Image metadata:</strong> Upload date, time, and device information</li>
             </ul>
             <p>
-              Your photographs are temporarily uploaded to secure storage (Supabase Storage) and sent to OpenAI&apos;s API for AI analysis. After analysis, we store only the image URL reference and analysis results in our database - not the photograph itself. The actual photograph file may be retained in storage for your viewing history, but is only accessible to you through your authenticated account. We do not share your photographs with other users or third parties (except as described in Section 4).
+              Your photographs are sent to OpenAI&apos;s API for AI analysis and are stored locally on your device for your viewing history. We do not store your photographs on our servers. The actual photograph files on your device are only accessible through your authenticated account. We do not share your photographs with other users or third parties (except as described in Section 4).
             </p>
 
             <h3 className="text-xl text-[#FAFAFA]">2.3 Analysis Data</h3>
@@ -59,18 +59,32 @@ export default function PrivacyPolicy() {
               After analyzing your outfit, we store:
             </p>
             <ul className="list-disc list-inside space-y-2 ml-4">
-              <li><strong>Style scores:</strong> Ratings across six categories (fit, color, style, season, occasion, grooming)</li>
-              <li><strong>AI-generated feedback:</strong> Tips and recommendations for improvement</li>
-              <li><strong>Scan history:</strong> Records of your past analyses and trends over time</li>
+              <li><strong>Style scores:</strong> Ratings across three categories (fit, color, and style) plus an overall score</li>
+              <li><strong>Style category:</strong> The detected style of your outfit (e.g., Streetwear, Casual, Minimalist, Business Casual, Old Money, Sporty)</li>
+              <li><strong>AI-generated feedback:</strong> Tips and recommendations for improvement in each scoring category</li>
+              <li><strong>Scan history:</strong> Records of your past analyses</li>
             </ul>
 
-            <h3 className="text-xl text-[#FAFAFA]">2.4 Subscription Information</h3>
+            <h3 className="text-xl text-[#FAFAFA]">2.4 Style Preferences</h3>
+            <p>
+              During onboarding, you may provide:
+            </p>
+            <ul className="list-disc list-inside space-y-2 ml-4">
+              <li><strong>Style preferences:</strong> The fashion styles you gravitate toward</li>
+              <li><strong>Fit preference:</strong> Your preferred clothing fit (e.g., slim, regular, oversized)</li>
+            </ul>
+            <p>
+              These preferences are used to personalize your outfit analysis.
+            </p>
+
+            <h3 className="text-xl text-[#FAFAFA]">2.5 Subscription Information</h3>
             <p>
               For paid subscribers, we collect:
             </p>
             <ul className="list-disc list-inside space-y-2 ml-4">
               <li><strong>Subscription status:</strong> Whether you have an active subscription</li>
               <li><strong>Subscription tier:</strong> Free, paid, or unlimited</li>
+              <li><strong>Subscription product ID:</strong> Which subscription plan you are on</li>
               <li><strong>Purchase receipts:</strong> Validated through Apple&apos;s servers (we do not store payment card information)</li>
             </ul>
             <p>
@@ -88,7 +102,7 @@ export default function PrivacyPolicy() {
             <ul className="list-disc list-inside space-y-2 ml-4">
               <li>Process and analyze your outfit photographs using AI</li>
               <li>Generate personalized style scores and recommendations</li>
-              <li>Store your scan history for trend analysis</li>
+              <li>Store your scan history for your reference</li>
               <li>Authenticate your account and manage your session</li>
             </ul>
 
@@ -109,6 +123,7 @@ export default function PrivacyPolicy() {
 
             <h3 className="text-xl text-[#FAFAFA]">3.4 To Communicate With You</h3>
             <ul className="list-disc list-inside space-y-2 ml-4">
+              <li>Send daily reminder notifications (if you opt in)</li>
               <li>Send important updates about the App or your account</li>
               <li>Respond to your support requests</li>
               <li>Notify you about changes to our Terms or Privacy Policy</li>
@@ -135,13 +150,16 @@ export default function PrivacyPolicy() {
             </p>
             <ul className="list-disc list-inside space-y-2 ml-4">
               <li>
-                <strong>Supabase:</strong> Database hosting and backend infrastructure (stores your account data, photographs, and analysis results)
+                <strong>Supabase:</strong> Database hosting and backend infrastructure (stores your account data and analysis results)
               </li>
               <li>
                 <strong>OpenAI:</strong> AI-powered outfit analysis (your photographs are sent to OpenAI&apos;s API for analysis, subject to OpenAI&apos;s data usage policies)
               </li>
               <li>
                 <strong>Apple:</strong> Authentication (Apple Sign-In) and payment processing (in-app purchases)
+              </li>
+              <li>
+                <strong>Superwall:</strong> Subscription and paywall management (receives your user identifier to manage subscription state and display paywalls)
               </li>
             </ul>
             <p>
@@ -173,8 +191,12 @@ export default function PrivacyPolicy() {
           <section className="space-y-4">
             <h2 className="text-2xl font-serif italic text-[#FAFAFA]">5. Data Storage and Security</h2>
             <h3 className="text-xl text-[#FAFAFA]">5.1 Where We Store Your Data</h3>
+            <ul className="list-disc list-inside space-y-2 ml-4">
+              <li><strong>On your device:</strong> Outfit photographs are stored locally on your device</li>
+              <li><strong>In the cloud:</strong> Account data, style preferences, and analysis results are stored on secure servers provided by Supabase</li>
+            </ul>
             <p>
-              Your data is stored on secure servers provided by Supabase, which may be located in various jurisdictions. By using the App, you consent to the transfer and storage of your information in these locations.
+              By using the App, you consent to the transfer and storage of your information in these locations.
             </p>
 
             <h3 className="text-xl text-[#FAFAFA]">5.2 Security Measures</h3>
@@ -184,9 +206,9 @@ export default function PrivacyPolicy() {
             <ul className="list-disc list-inside space-y-2 ml-4">
               <li>Encrypted data transmission using HTTPS/TLS</li>
               <li>Secure authentication via Apple Sign-In</li>
+              <li>Row-level security policies ensuring users can only access their own data</li>
               <li>Access controls and authentication for our backend systems</li>
               <li>Regular security audits and updates</li>
-              <li>Encrypted storage of sensitive data</li>
             </ul>
             <p>
               However, no method of transmission over the internet or electronic storage is 100% secure. While we strive to protect your information, we cannot guarantee absolute security.
@@ -200,8 +222,9 @@ export default function PrivacyPolicy() {
               After account deletion, we will:
             </p>
             <ul className="list-disc list-inside space-y-2 ml-4">
-              <li>Permanently delete your photographs and analysis results</li>
+              <li>Permanently delete your analysis results and scan history</li>
               <li>Remove your account information from our active databases</li>
+              <li>Note that photographs stored locally on your device are not automatically deleted — you may remove them by uninstalling the App</li>
               <li>Retain limited information (such as transaction records) only as required by law or for legitimate business purposes</li>
             </ul>
           </section>
@@ -215,18 +238,18 @@ export default function PrivacyPolicy() {
 
             <h3 className="text-xl text-[#FAFAFA]">6.2 Deletion</h3>
             <p>
-              You can delete your account at any time through the App settings under Profile → Account Settings → Delete Account. This will permanently remove:
+              You can delete your account at any time through the App settings under Profile → Delete Account. This will permanently remove:
             </p>
             <ul className="list-disc list-inside space-y-2 ml-4">
               <li>Your account information</li>
-              <li>All uploaded photographs</li>
               <li>All scan results and history</li>
+              <li>Your style preferences and profile data</li>
               <li>Your subscription status (note: you must cancel your subscription separately through Apple)</li>
             </ul>
 
             <h3 className="text-xl text-[#FAFAFA]">6.3 Opt-Out of Communications</h3>
             <p>
-              You can opt out of non-essential communications by adjusting your notification preferences in the App settings or by following the unsubscribe link in emails we send you.
+              You can opt out of push notifications by adjusting your notification preferences in the App settings or through your device&apos;s system settings.
             </p>
 
             <h3 className="text-xl text-[#FAFAFA]">6.4 California Privacy Rights</h3>
@@ -277,6 +300,7 @@ export default function PrivacyPolicy() {
               <li><strong>Apple Services:</strong> <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer" className="text-[#FAFAFA] underline hover:text-white">Apple Privacy Policy</a></li>
               <li><strong>Supabase:</strong> <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer" className="text-[#FAFAFA] underline hover:text-white">Supabase Privacy Policy</a></li>
               <li><strong>OpenAI:</strong> <a href="https://openai.com/privacy/" target="_blank" rel="noopener noreferrer" className="text-[#FAFAFA] underline hover:text-white">OpenAI Privacy Policy</a></li>
+              <li><strong>Superwall:</strong> <a href="https://superwall.com/privacy" target="_blank" rel="noopener noreferrer" className="text-[#FAFAFA] underline hover:text-white">Superwall Privacy Policy</a></li>
             </ul>
             <p>
               We are not responsible for the privacy practices of these third-party services. We encourage you to review their privacy policies before using them.
@@ -293,7 +317,6 @@ export default function PrivacyPolicy() {
             </p>
             <ul className="list-disc list-inside space-y-2 ml-4">
               <li>Standard contractual clauses approved by the European Commission</li>
-              <li>Certification schemes such as Privacy Shield (where applicable)</li>
               <li>Other legally recognized transfer mechanisms</li>
             </ul>
           </section>
@@ -308,7 +331,7 @@ export default function PrivacyPolicy() {
               <li><strong>Device Identifiers:</strong> To uniquely identify your device for authentication and security purposes only</li>
             </ul>
             <p>
-              We do not use analytics tools, advertising trackers, or any third-party tracking services.
+              We do not use advertising trackers or cross-app tracking services.
             </p>
           </section>
 
