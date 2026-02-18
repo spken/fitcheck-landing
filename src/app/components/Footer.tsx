@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="px-6 py-12 text-center text-xs text-[#8E8E8E] space-y-2">
-      <p>© {new Date().getFullYear()} Matias Varela</p>
+      <p>© {new Date().getFullYear()} Matias Varela Cousillas</p>
       <p className="space-x-2">
         <Link href="/terms" className="hover:text-[#FAFAFA] transition-colors">
           Terms of Service
