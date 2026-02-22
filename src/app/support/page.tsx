@@ -143,10 +143,10 @@ export default function Support() {
             we&apos;ll get back to you within 1–2 business days.
           </p>
           <a
-            href="mailto:support@tryfitcheck.co"
+            href="mailto:hello@tryfitcheck.co"
             className="inline-block text-[#FAFAFA] underline underline-offset-4 hover:text-[#FAFAFA]/70 transition-colors"
           >
-            support@tryfitcheck.co
+            hello@tryfitcheck.co
           </a>
         </section>
 
