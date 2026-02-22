@@ -12,6 +12,10 @@ export default function Footer() {
         <Link href="/privacy" className="hover:text-[#FAFAFA] transition-colors">
           Privacy Policy
         </Link>
+        <span>|</span>
+        <Link href="/support" className="hover:text-[#FAFAFA] transition-colors">
+          Support
+        </Link>
       </p>
     </footer>
   );
