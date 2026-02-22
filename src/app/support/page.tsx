@@ -140,7 +140,7 @@ export default function Support() {
           </h2>
           <p className="text-[#FAFAFA]/90 leading-relaxed max-w-2xl">
             Can&apos;t find what you&apos;re looking for? Send us a message and
-            we&apos;ll get back to you within 1–2 business days.
+            we&apos;ll get back to you within 1-2 business days.
           </p>
           <a
             href="mailto:hello@tryfitcheck.co"
