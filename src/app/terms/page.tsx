@@ -1,14 +1,16 @@
 import Link from "next/link";
+import BackToFitcheck from "../components/BackToFitcheck";
 import Footer from "../components/Footer";
+
+export const metadata = {
+  title: "Terms of Service - FITCHECK",
+  description: "Review FITCHECK's terms, subscription policies, and user responsibilities.",
+};
 
 export default function TermsOfService() {
   return (
     <main className="min-h-screen bg-[#0F0F0F] text-[#FAFAFA] font-sans">
-      <header className="px-6 py-6 max-w-4xl mx-auto">
-        <Link href="/" className="text-xs tracking-wide text-[#8E8E8E] hover:text-[#FAFAFA] transition-colors">
-          ← Back to FITCHECK
-        </Link>
-      </header>
+      <BackToFitcheck />
 
       <article className="px-6 py-12 max-w-4xl mx-auto space-y-8">
         <div className="space-y-4">
