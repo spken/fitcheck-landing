@@ -6,7 +6,7 @@ export default function FinalCTA() {
       <h2 className="text-4xl md:text-5xl font-serif mb-10">
         Dress better today.
       </h2>
-      <a href="#" className="relative inline-block glow">
+      <a href="https://apps.apple.com/us/app/fitcheck-dress-better/id6757345061" className="relative inline-block glow">
         <Image
           src="/download.svg"
           alt="Download on the App Store"
