@@ -17,7 +17,7 @@ export default function Hero() {
           because you weren't sure?
         </p>
 
-        <a href="#" className="relative block w-fit mx-auto md:mx-0 glow">
+        <a href="https://apps.apple.com/us/app/fitcheck-dress-better/id6757345061" className="relative block w-fit mx-auto md:mx-0 glow">
           <Image
             src="/download.svg"
             alt="Download on the App Store"
