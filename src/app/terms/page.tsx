@@ -1,10 +1,21 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import BackToFitcheck from "../components/BackToFitcheck";
 import Footer from "../components/Footer";
 
-export const metadata = {
-  title: "Terms of Service - FITCHECK",
-  description: "Review FITCHECK's terms, subscription policies, and user responsibilities.",
+export const metadata: Metadata = {
+  title: "Terms of Service",
+  description:
+    "Review FITCHECK's terms of service, subscription policies, user responsibilities, and content guidelines.",
+  alternates: {
+    canonical: "/terms",
+  },
+  openGraph: {
+    title: "Terms of Service — FITCHECK",
+    description:
+      "Review FITCHECK's terms of service, subscription policies, and user responsibilities.",
+    url: "https://tryfitcheck.co/terms",
+  },
 };
 
 export default function TermsOfService() {

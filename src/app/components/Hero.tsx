@@ -32,9 +32,10 @@ export default function Hero() {
         <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#4A4A4A] to-transparent blur-2xl" />
         <Image
           src="/iphone-mockup.svg"
-          alt="FITCHECK app preview"
+          alt="FITCHECK app showing AI outfit analysis with style scores for fit, color, and overall rating"
           width={360}
           height={720}
+          priority
           className="relative rounded-3xl"
         />
       </div>

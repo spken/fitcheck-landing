@@ -1,0 +1,16 @@
+{
+  "name": "FITCHECK",
+  "short_name": "FITCHECK",
+  "description": "AI-powered outfit feedback. Score your fit, color, and style.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0F0F0F",
+  "theme_color": "#0F0F0F",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}

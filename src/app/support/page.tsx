@@ -1,15 +1,28 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import BackToFitcheck from "../components/BackToFitcheck";
 import Footer from "../components/Footer";
+import { FAQJsonLd } from "../components/StructuredData";
 
-export const metadata = {
-  title: "Support - FITCHECK",
-  description: "Get help with FITCHECK. Browse our FAQ or reach out directly.",
+export const metadata: Metadata = {
+  title: "Support & FAQ",
+  description:
+    "Get help with FITCHECK. Find answers to common questions about outfit scanning, subscriptions, account management, and troubleshooting.",
+  alternates: {
+    canonical: "/support",
+  },
+  openGraph: {
+    title: "Support & FAQ — FITCHECK",
+    description:
+      "Find answers to common questions about FITCHECK — outfit scanning, subscriptions, account management, and more.",
+    url: "https://tryfitcheck.co/support",
+  },
 };
 
 export default function Support() {
   return (
     <main className="min-h-screen bg-[#0F0F0F] text-[#FAFAFA] font-sans">
+      <FAQJsonLd />
       <BackToFitcheck />
 
       <article className="px-6 py-12 max-w-4xl mx-auto space-y-16">

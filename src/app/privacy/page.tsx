@@ -1,9 +1,20 @@
+import type { Metadata } from "next";
 import BackToFitcheck from "../components/BackToFitcheck";
 import Footer from "../components/Footer";
 
-export const metadata = {
-  title: "Privacy Policy — FITCHECK",
-  description: "Read how FITCHECK collects, uses, and protects your information.",
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description:
+    "Learn how FITCHECK collects, uses, and protects your personal information. We respect your privacy and are committed to data transparency.",
+  alternates: {
+    canonical: "/privacy",
+  },
+  openGraph: {
+    title: "Privacy Policy — FITCHECK",
+    description:
+      "Learn how FITCHECK collects, uses, and protects your personal information.",
+    url: "https://tryfitcheck.co/privacy",
+  },
 };
 
 export default function PrivacyPolicy() {

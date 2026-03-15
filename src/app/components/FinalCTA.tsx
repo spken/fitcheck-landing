@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function FinalCTA() {
   return (
-    <section className="px-6 py-32 text-center">
+    <section className="px-6 py-32 text-center" aria-label="Download FITCHECK">
       <h2 className="text-4xl md:text-5xl font-serif mb-10">
         Dress better today.
       </h2>
